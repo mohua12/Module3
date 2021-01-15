@@ -46,7 +46,7 @@ showlist.remove=function(item)
 
 
 
-MenuSearchService.$inject = ['$http'];
+MenuSearchService.$inject = ['$https'];
 function MenuSearchService($https)
 {
 var service=this;
