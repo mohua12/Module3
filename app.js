@@ -47,15 +47,15 @@ showlist.remove=function(item)
 
 
 MenuSearchService.$inject = ['$http'];
-function MenuSearchService($http)
+function MenuSearchService($https)
 {
 var service=this;
 var items=[];
 service.getallMenu=function()
 {
-   var response=$http({
+   var response=$https({
      method:"GET",
-     url:("http://davids-restaurant.herokuapp.com/menu_items.json")
+     url:("https://davids-restaurant.herokuapp.com/menu_items.json")
 
    });
 return response;
